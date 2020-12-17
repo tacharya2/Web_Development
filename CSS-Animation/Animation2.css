@@ -1,0 +1,63 @@
+/*1. Animation Iteration Count
+  2. Animation Direction
+  3. Animation Timing Function
+  4.  Animation Fill Mode
+  5. Animation Shorthand Property
+  */
+section {
+	width: 10rem;
+	height: 10rem;
+	background-color: olivedrab;
+	border: orange 2rem solid;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: b;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-iteration-count: 2;
+	position: relative;
+	/*animation-direction: alternate-reverse;*/
+	animation-direction: alternate;
+	/*animation-timing-function: ease-in-out;*/
+	/* animation-fill-mode: forwards; */
+	/*animation-fill-mode: backwards;
+  animation-fill-mode: forwards;*/
+  animation-fill-mode: both;
+  
+/* one shorthand key for animation */
+/* 1 -> animation name
+2 -> animation duration
+3 -> animation delay 
+4 -> animation iteration count
+5 -> animation direction  */
+/* animation: name 2s cubic-bezier(0.1, 0.2, 0.3, 0.5) 3s infinite, alternate; */
+
+}
+@keyframes b {
+	0% {
+		transform: translate(30rem, 0);
+		background-color: orchid;
+		opacity: 0.9;
+	}
+	25% {
+		transform: translate(30, 30rem);
+		background-color: purple;
+		opacity: 0.8;
+	}
+	50% {
+		transform: translate(30rem, 15rem);
+		background-color: red;
+		opacity: 0.7;
+	}
+	75% {
+		transform: translate(15rem, 0);
+		background-color: salmon;
+		opacity: 0.6;
+	}
+	100% {
+		transform: translate(30rem, 30rem);
+		background-color: springgreen;
+		opacity: 0.5;
+	}
+}

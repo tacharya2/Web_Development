@@ -1,0 +1,59 @@
+section{
+  width: 20rem;
+  height: 10rem;
+  background-color: olivedrab;
+  padding: 2rem;
+  animation-name: a;
+  animation-duration: 10s;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation-delay: 2s;
+}
+/*@keyframes a{
+  from{
+    background-color: lawngreen;
+  }
+  to{
+    background-color: lightcoral;
+  }
+}*/
+@keyframes a{
+  0%{
+    background-color: lightcoral;
+    left: 0;
+    top: 0;
+    color: mediumvioletred;
+    opacity: 0.9;
+  }
+  25%{
+    background-color: lightseagreen;
+    left: 0;
+    top: 20rem;
+    color: red;
+    opacity: 0.7;
+
+  }
+  50%{
+    background-color: maroon;
+    left: 20rem;
+    top: 20rem;
+    color: pink;
+    opacity: 0.5;
+  }
+  75%{
+    background-color: mediumblue;
+    left: 20rem;
+    top: 0;
+    color: mediumvioletred;
+    opacity: 0.3;
+  }
+  100%{
+    background-color: whitesmoke;
+    left: 0;
+    top: 0;
+    color: goldenrod;
+    opacity: 0.1;
+  }
+}
+

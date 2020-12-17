@@ -1,0 +1,100 @@
+body {
+	background-image: url(https://codd.cs.gsu.edu/~tacharya2/Assignment2/img/background.png);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 8pt;
+	margin: 0%;
+}
+main {
+	text-align: center;
+}
+#banner {
+	background-image: url(https://codd.cs.gsu.edu/~tacharya2/Assignment2/img/bannerbackground.png);
+	margin-top: 0%;
+	margin-left: 0%;
+	background-repeat: repeat-x;
+}
+h1 {
+	font-size: 48pt;
+}
+.content {
+	display: grid;
+	width: 800px;
+	/*height: 900px;*/
+	margin: auto;
+	border: 4px solid gray;
+	grid-template-columns: 550px 250px;
+}
+.side {
+	background-color: #a2b964;
+}
+.sidetext {
+	text-align: left;
+	padding: 10px;
+}
+.head {
+	background-image: url(https://codd.cs.gsu.edu/~tacharya2/Assignment2/img/rottenbackground.png);
+}
+.head > h1 {
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+	display: inline;
+}
+.head > p {
+	color: white;
+	display: inline;
+}
+.quotes {
+	display: grid;
+	grid-template-columns: 50% 47%;
+	grid-column-gap: 2%;
+	grid-row-gap: 3em;
+	margin: 2%;
+	margin-right: 2%;
+}
+#quotes {
+	background-color: #e1d697;
+	border: gray 2px solid;
+	padding: 8px;
+	font-weight: bold;
+}
+#quotes > img {
+	margin-right: 5px;
+	float: left;
+}
+.critic > img {
+	float: left;
+	margin-right: 5px;
+}
+
+footer {
+	background-color: #a2b964;
+	height: 20px;
+	margin-top: 280px;
+	text-align: right;
+}
+footer > div {
+	text-align: center;
+}
+.both {
+	width: 80px;
+	background-color: gold;
+	size: 10px;
+	float: right;
+	/*display: inline;*/
+}
+.validator {
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	font-size: 10px;
+}
+
+.critic {
+	margin-top: 5%;
+}
+.comments {
+	font-style: italic;
+}
+.footer {
+	text-align: right;
+}

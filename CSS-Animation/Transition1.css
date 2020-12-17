@@ -1,0 +1,28 @@
+a{
+  display: inline-block;
+  margin-top: 5rem;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  background-color: greenyellow;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+color: #ffffff;
+}
+a:hover{
+
+  color: red;
+  background-color: indigo;
+ /* transition: ease-in-out 1s;
+  transition: background-color 1s;
+  transition: color 3s;*/
+
+  /*Trsnaition: all, transition duration, delay*/
+  transition: cubic-bezier(0.41, 1.2, 1.9, 1.9) all 2s;
+  transform: translateY(10rem);
+  /*transition: all 1s;*/
+  /*delay k-word*/
+  /*transition-delay: 2s;*/
+  transition-timing-function: 0rem;
+}

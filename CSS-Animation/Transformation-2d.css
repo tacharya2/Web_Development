@@ -1,0 +1,19 @@
+section{
+  height: 10rem;
+  width: 30rem;
+  background-color: blueviolet;
+  padding: 2rem;
+  /*Translate X*/
+  /*Same properties overrides each other*/
+  /*transform: translateX(10rem) translateY(10rem);*/
+  /*transform: translate(30rem, 30rem);*/
+  /*transform: scale(1, 1);*/
+  /*transform: rotate(ndeg)*/
+  /*transform: rotate(-20deg);*/
+  /*Skew(ndeg)<-- can be both x, or y or both*/
+ /*transform: skew(15deg, 15deg);*/
+ /*Matrix(scaleX(),skeyY(), skewX(), scaleY(), trsnalateX(), translateY() )*/
+/*transform: matrix(1.9, 2, 0, 1.9, 2, 2 );*/
+
+
+}

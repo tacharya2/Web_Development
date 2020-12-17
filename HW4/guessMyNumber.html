@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=100%, initial-scale=auto">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="guessMyNumber.css">
+  <script src="guessMyNumber.js"></script>
+  <!-- <script src="audio.js"></script> -->
+</head>
+<body onload = "initializer()">
+<div id="container">
+  <div>
+    <h3>PART(B)</h3>
+    <p id="time">Countdown: </p>
+    <h4>Guess my Number Between 1 and 100</h4>
+    <input type="text" name="number" id="number">
+    <button href="#" onclick="guess()">Guess</button>
+    <p id="attempts"></p>
+    <p id="thrash"></p>
+  </div>
+  <!-- Music -->
+      <div>
+        <audio src="audio.mp3" id="audio" >Your Browser Does not 
+          support audio element</audio>
+          <p>Music</p>
+          <button onclick="play()" type="button">Play</button>
+          <button onclick="pause()" type="button">Pause</button>
+      </div>
+        <script>
+          var myMusic = document.getElementById("audio");
+          function play(){
+            myMusic.play()
+          }
+          function pause(){
+            myMusic.pause()
+          }
+        </script>
+        <a href="payroll.html">Home</a>
+
+
+        <script>
+          // source: w3Schools.com
+          var update = new Date("Jan 5, 2021 15:37:25").getTime();
+          
+          
+          var timer = setInterval(function() {
+          
+         
+            var now = new Date().getTime();
+              
+          
+            var lapse = update - now;
+              
+          
+            var days = Math.floor(lapse / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((lapse % (1000*60*60*24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((lapse % (1000*60*60)) / (1000 * 60));
+            var seconds = Math.floor((lapse % (1000*60)) / 1000);
+              
+         
+            document.getElementById("time").innerHTML = seconds + "s ";
+              
+         
+            if (lapse < 0) {
+              clearInterval(timer);
+              document.getElementById("time").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+          </script>
+</div>
+</body>
+</html>

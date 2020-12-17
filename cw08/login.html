@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign In</title>
+
+  <link rel="stylesheet" href="./signin-signup.css">
+  <script defer src="script.js"></script>
+ 
+</head>
+
+<body>
+ 
+    <h3><strong>Welcome to</strong></h3>
+    <h1 id="byte"> My Universe</h1>
+
+   <!-- <div id="error"></div> -->
+
+  <div  class="container">
+    <H2>Validate Yourself</H2>
+    <form id="form" action="/" method="post">
+      
+      <div id="error" style="color: red;"></div>
+      
+        <label for="id"><b>ID</b></label>
+        <input type="text" name="id" id="id" minlength = 4 maxlenght="16">
+
+        
+        <label for="firstName"><b>FirstName</b></label>
+        <input type="text"name ="firstName" id="firstName" minlength = 4 maxlength ="16">
+        
+    
+        <label for="lastName"><b>LastName</b></label>
+        <input type="text" name ="LastName" id="lastName" minlength = 4 maxlength ="16">
+
+        <button type="submit" name="submit" id="submit" onclick="myFunction()">Add</button>
+        
+        <div>
+        <a href="./login.html" onclick="myFunction()"> Log In</a>
+        </div>
+    </form>
+    
+  </div>
+
+</body>
+
+</html>

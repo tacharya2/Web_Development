@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="form.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Validate Yourself</h2>
+
+    </div>
+    <form class="form" id="form" action="./form.html" >
+      <div class="form-control">
+        <label for="id">ID</label>
+        <input type="text" class="id" id="id" placeholder="1975cvq">
+        <small style="color: red;"></small>
+      </div>
+
+
+      <div class="form-control">
+        <label for="firstName">First Name</label>
+        <input type="text" class="firstName" id="firstName" placeholder="Pamela">
+        <small style="color: red;"></small>
+      </div>
+
+
+      <div class="form-control">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="lastName" id="lastName" placeholder="Drinkwater">
+        <small style="color: red;"></small>
+      </div>
+      <div>
+        <button type="submit" name="submit" id="submit" 
+        onclick= checkInputs(); return false;"
+        >Add</button>
+      </div>
+      <div>
+  
+      </div>
+    </form>
+    <p id="info1"></p>
+    <p id="info2"></p>
+    <p id="info3"></p>
+  </div>
+  <script defer src="form.js"></script>
+</body>
+</html>

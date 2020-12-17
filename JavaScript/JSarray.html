@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <script>
+    newArray = ["Papaya", "Orange", "Grapes", "Banana"];
+    document.write(newArray.valueOf(), "<br>");
+    second = newArray[1];
+
+    document.write("The second element is: ", second);
+
+    newArray.push("Kiwi", "Spinach", "Lettuce")
+    document.write("<br>",newArray.valueOf(), "<br>");
+    newArray.pop();
+    document.write("<br>",newArray.valueOf(), "<br>");
+    newArray.unshift("Mango", "Lichi")
+    document.write("<br>",newArray.valueOf(), "<br>");
+    newArray.shift();
+    document.write("<br>",newArray.valueOf(), "<br>");
+
+    var sliced = newArray.slice(1,3);
+    document.write("<br>",newArray.valueOf(), "<br>");
+    document.write(sliced, "<br>");
+
+    var combinedArray = newArray.concat(sliced)
+    document.write("<br>",combinedArray.valueOf(), "<br>");
+
+   var reversed = (combinedArray.reverse());
+   document.write("<br>",reversed.valueOf(), "<br>");
+
+   var sorted = reversed.sort();
+   document.write("<br>",sorted.valueOf(), "<hl><br><br>");
+
+
+  //  multidimensional Array
+
+  var person1 = new Array("Hema", 22);
+  var person2 = new Array("Tika", 24);
+  var person3 = new Array("Chandra", 25);
+  var person4 = new Array("Radha", 26);
+  var person5 = new Array("Kiran", 29);
+
+  var scores = new Array(person1, person2, person3, person4, person5);
+  document.write(scores.valueOf(), "<br><br>");
+  // Hema,22,Tika,24,Chandra,25,Radha,26,Kiran,29
+
+  function displayMDArray(){
+    for(x = 0; x < scores.length; x++){
+      document.write(scores[x][0] + " has a score of: " + scores[x][1],"<br>");
+    }
+  }
+  displayMDArray();
+  </script>
+  <a href="learn.html">Home</a>
+</body>
+</html>

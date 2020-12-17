@@ -1,6 +1,6 @@
 <?php
 	include("configure.php");
-	include("creatTable.php");
+	include("create_table.php");
 	// $connection = mysqli_connect($host, $username, $password, db);
 	// $userName = $_POST["username"];
 	// $password = $_POST["password"];

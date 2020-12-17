@@ -1,0 +1,33 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;;
+
+}
+.container{
+  background-color: aquamarine;
+  border: 2px solid red;
+  border-radius: 10px;
+padding: 10px 250px;
+margin-right: auto;
+margin-left: auto;
+width: 300px;
+height: auto;
+display: inline-flexbox;
+}
+.p{
+  color: blue;
+}
+.x{
+padding: 5px;
+margin: 10px;
+}
+.y{
+padding: 5px;
+margin: 10px;
+}
+.submit{
+margin-left:200px;
+padding: 5px 10px;
+margin: 10px;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+<body>
+  <script>
+    var longarray = new Array("Sarah", "Patrick", "Jane", "Tim");
+    var goodarray = ["Prinsa", "Heema", "Prajol", "Tek"];
+    document.write("Criminals discoveted so far: ",longarray, "\n");
+    document.write("\n");
+    document.write("<br>");
+    document.write("\nThe investigator: ", goodarray, "<br>");
+
+    // creating an empty array
+    var emptyarray = [];
+
+    // pushing elements to it
+    emptyarray.push("Mango", " Apple");
+    emptyarray.push(4);
+    
+    document.write(emptyarray, "<br>");
+    document.write(emptyarray[1]);
+    //document.write(emptyarray.get(1));
+    document.write("<br>");
+    var len = emptyarray.length;
+    document.write(len,"<br>");
+    var valuesOfArray = goodarray.valueOf();
+    document.write(valuesOfArray);
+
+    var num = prompt("Please enter a random number between 0 and 10 ");
+    emptyarray.push(num)
+    alert("element "+ num+ "in the array is : "+ emptyarray[num]);
+
+    document.write("<br>")
+    // Replacing the value of value of array element
+    var newName = prompt("please enter you name: ", " ");
+    //emptyarray.push(newName);
+
+    emptyarray[1] = newName;
+    document.write(emptyarray, "<br>");
+
+    newArray = ["Papaya", "Orange", "Grapes", "Banana"];
+    document.write(valueOf(newArray));
+
+  </script>
+  <a href="JSarray.html">JS Array</a>
+  <br><br>
+  <a href="DOM.html">JS DOM</a>
+  <br><br>
+  <a href="mouseUpDown.html">Mouse Up & Down</a>
+  <br><br>
+  <a href="someOptions.html">some examples</a>
+  <br><br>
+  <a href="functionSum.html">Array Sum</a>
+  <br><br>
+  <a href="Object.html">Ways to create an JS Object</a>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Work 07</title>
+
+</head>
+<body>
+  <!-- ********************************Q1********************************** -->
+  <h2>Part 2</h2>
+  <h6>Q1</h6>
+  <p>The first n Fibonacci Series: </p>
+  <script>
+   var fib_numbers = function (n) {
+  if (n === 1) {
+    return [0, 1];
+  } else {
+    var others = fib_numbers(n - 1);
+    others.push(others[others.length - 1] + others[others.length - 2]);
+    return others;
+  }
+};
+let fibo = fib_numbers(10);
+
+document.write(fibo);
+  </script>
+  <!-- *****************************Q2********************************* -->
+  <h6>Q2</h6>
+  <p>Constructed a pattern using nested for loop: </p>
+  <p style="color: red;">NOTE: Please view at console by inspect</p>
+
+<script>
+   let x = 10;
+   let y = 10;
+   let dot = "";
+   for(let i = 1; i < y; i++){
+     for(let j =1; j < x; j++){
+       if(i >= j){
+         dot = dot.concat("*");
+       }
+     }
+     dot = dot.concat("\n")
+   } 
+   document.write(dot);
+   console.log(dot);
+</script>
+
+<!-- ******************************Q3*************************************** -->
+<h6>Q3</h6>
+<p>Program to sort the items in array: Used bubbleSort </p>
+<script>
+  var array = [3,8,7,6,5,-4,-3,2,1];
+  function swapper(arr, current, next){
+    let temp = arr[current];
+    arr[current] = arr[next];
+    arr[next] = temp;
+  }
+
+  function bubble_sort(arr){
+    let n = arr.length;
+    for(let i = 0; i < n; i++){
+      for(let j = 0; j < n-i; j++){
+        if(arr[j] > arr[j+1]){
+          swapper(arr, j, j+1);
+        }
+      }
+    }
+    return arr;
+  }
+  document.write(bubble_sort(array));
+</script>
+<!-- *******************************Q4*************************************** -->
+<h6>Q4</h6>
+<p>Program to return the most frequent element in an array: </p>
+<script>
+let arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+let temp = 1;
+let repeat = 0;
+let item;
+for(let i = 0; i < arr.length; i++){
+  for(let j = i; j < arr.length; j++){
+    if(arr[i] == arr[j]){
+      repeat++;
+    }
+    if(temp < repeat){
+      temp = repeat;
+      item = arr[i];
+    }
+  }
+  repeat = 0;
+}
+document.write(item + " repeates " + temp + " times");
+</script>
+<!-- **********************************Q5*********************************** -->
+<h6>Q5</h6>
+<p>shuffle an array of n integer: </p>
+<p style="color:red">NOTE: prints okay at the console using inspect </p>
+<script>
+let example = [0,1,2,3,4,5];
+function shuffle(myarray){
+  let nums = myarray.length;
+
+  while(nums > 0){
+   let index = Math.floor(Math.random() * nums);
+    nums--;
+
+    //swp them
+    let temp = myarray[nums];
+    myarray[nums] = myarray[index];
+    myarray[index] = temp;
+  }
+  return myarray;
+}
+document.write(shuffle("[ " + example + " ]"));
+console.log(shuffle(example));
+</script>
+<!-- ******************************Q6*************************************** -->
+<p>This text should change solor; this text should change background color</p>
+<p>I have three lines of text and a function call</p>
+<p>Two prompts for users to chose color of text and background</p>
+<script>
+function changeColor(textColor, bgColor){
+  document.body.style.color = textColor;
+  document.body.style.backgroundColor = bgColor
+}
+var textColor = prompt("Enter the desired text color:");
+var bgColor = prompt("Enter the preferred background color: ")
+changeColor(textColor, bgColor);
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React is Cool</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  class ListCourse2 extends React.Component{
+    render(){
+      var courses = ['Angular', 'React', 'Express', 'Node' ];
+      var elements = [];
+      for(var course of courses){
+      elements.push(<li> {course} </li>);
+      
+       }
+      return <div>
+      <h1>{this.props.title}</h1>
+        <ol> {elements} </ol>
+      </div>
+    }
+  }
+  ReactDOM.render(
+<div><ListCourse2 title = 'First React Code'>
+//  NO code here
+</ListCourse2>
+<p>You can also write directly like this here</p>
+<h3>Cool React!</h3>
+</div>,
+document.getElementById('root')  
+);
+</script>
+</body>
+</html>

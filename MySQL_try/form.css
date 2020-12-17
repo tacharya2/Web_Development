@@ -1,0 +1,10 @@
+div{
+  background-color: rgb(205, 205, 221);
+  margin: 0;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#submit{
+ margin-left: 120px;
+}

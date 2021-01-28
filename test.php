@@ -37,6 +37,8 @@
     <a href="Exercise5.php">Exercise 5</a>
     <br>
     <a href="Exercise6.php">Exercise 6</a>
+    <br>
+    <a href="Exercise6.php">Exercise 6</a>
   </div>
 </body>
 
